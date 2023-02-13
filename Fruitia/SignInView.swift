@@ -114,43 +114,108 @@ struct SignInView: View {
                 .padding(.bottom, 5)
                 
                 //MARK: FACEBOOK LOGIN
-                HStack {
-                    Button {
-                        // Action
-                    } label: {
-                        // add Hstack into the label for image
-                        Text("Continue with Facebook")
-                            .font(.system(size: 12))
-                            .frame(width: 250, height: 30)
-                            .background(Color("fb-blue"))
-                            .foregroundColor(.white)
-                            .cornerRadius(10)
-                    }
-                }
-                .padding()
+                
+                Button(action: {
+                     // DO SOMETHING
+                        }) {
+                            ZStack {
+                                Image("fb-logo").renderingMode(.original)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .accessibility(label: Text("Sign in with Google"))
+                                    .frame(width: 15, height: 15)
+                                    .padding(.trailing, 153)
+                                Spacer()
+                                Text("Sign in with Facebook")
+                                    .font(.system(size: 12))
+                                    .foregroundColor(Color.white)
+                                Spacer()
+                            }
+                        }
+                        .padding()
+                        .cornerRadius(16)
+                        .background(Color("fb-blue"))
+                       
+                        .frame(width: 250, height: 30)
+                        .cornerRadius(10)
+//END
+                
+                
+                
+                
+                
+                
+                
+                
+//                HStack {
+//                    Button {
+//                        // Action
+//                    } label: {
+//                        // add Hstack into the label for image
+//                        Text("Continue with Facebook")
+//                            .font(.system(size: 12))
+//                            .frame(width: 250, height: 30)
+//                            .background(Color("fb-blue"))
+//                            .foregroundColor(.white)
+//                            .cornerRadius(10)
+//                    }
+//                }
+//                .padding()
                 
                 //MARK: INSTAGRAM LOGIN
                 
-                HStack {
-                    Button {
-                        // Action
-                    } label: {
-                        // add Hstack into the label for image
-                        Text("Continue with Google")
-                            .foregroundColor(.black)
-                            .font(.system(size: 12))
-                        //.padding(.top, 35)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(.black, lineWidth: 1)
-                                    .frame(width: 250, height: 30)
-                                
-                                
-                            )
-                            .padding(.bottom, 30)
+                //                HStack {
+                //                    Button {
+                //                        // Action
+                //                    } label: {
+                //                        // add Hstack into the label for image
+                //                        Text("Continue with Google")
+                //                            .foregroundColor(.black)
+                //                            .font(.system(size: 12))
+                //                        //.padding(.top, 35)
+                //                            .overlay(
+                //                                RoundedRectangle(cornerRadius: 10)
+                //                                    .stroke(.black, lineWidth: 1)
+                //                                    .frame(width: 250, height: 30)
+                //
+                //
+                //                            )
+                //                            .padding(.bottom, 30)
+                //
+                //                    }
+                //                }
+                
+                Button(action: {
+                    // do nothing
+                }) {
+                    ZStack() {
+                        Image("google-logo").renderingMode(.original)
+                            .resizable()
+                            .scaledToFit()
+                            .accessibility(label: Text("Sign in with Google"))
+                            .frame(width: 15, height: 15)
+                            .padding(.trailing, 153)
                         
+                        Spacer()
+                        Text("Sign in with Google")
+                            .font(.system(size: 12))
+                            .foregroundColor(Color.black)
+                        
+                        Spacer()
                     }
+                    
                 }
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(.black, lineWidth: 1)
+                        .frame(width: 250, height: 30)
+                    
+                    
+                )
+                .padding(.bottom, 30)
+                
+                
                 
                 HStack {
                     Text("Need an account?")
@@ -172,7 +237,7 @@ struct SignInView: View {
             Spacer()
             
         }
-
+        
     }
 }
 
