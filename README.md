@@ -1,0 +1,11 @@
+# Fruitia
+Sign in UI using swiftUI
+
+## Figma
+![Spash Screen](https://user-images.githubusercontent.com/64448202/220001123-1f76453d-fca5-4231-b86d-a2d906d8ffd3.png) || ![Signup](https://user-images.githubusercontent.com/64448202/220001160-2dbb5320-10eb-442d-b4a3-114fd944b420.png)
+
+## IOS Device
+
+
+https://user-images.githubusercontent.com/64448202/220001212-f96b9b37-e2ca-4b70-9f3b-0a99577f22a3.MP4
+
